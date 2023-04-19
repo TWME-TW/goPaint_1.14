@@ -724,7 +724,7 @@ public class GUI {
                     item.create(XMaterial.LIGHT_WEIGHTED_PRESSURE_PLATE.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6平面模式e",
+                            "&6平面模式",
                             "&c&l已禁用______&7點擊切換"
                     )
             );
