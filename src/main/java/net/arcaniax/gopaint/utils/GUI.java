@@ -696,7 +696,7 @@ public class GUI {
                     item.create(XMaterial.LIGHT_WEIGHTED_PRESSURE_PLATE.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6平面模式",
+                            "&6表面模式",
                             "&a&l啟用______&7點擊切換"
                     )
             );
@@ -724,7 +724,7 @@ public class GUI {
                     item.create(XMaterial.LIGHT_WEIGHTED_PRESSURE_PLATE.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6平面模式",
+                            "&6表面模式",
                             "&c&l已禁用______&7點擊切換"
                     )
             );
@@ -754,7 +754,7 @@ public class GUI {
         for (int x = 46; x <= 50; x++) {
             inv.setItem(
                     x,
-                    item.create(XMaterial.BARRIER.parseMaterial(), (short) 0, 1, "&cEmpty Slot", "___&7Click with a block to set")
+                    item.create(XMaterial.BARRIER.parseMaterial(), (short) 0, 1, "&c空位", "___&7點擊塊進行設置")
             );
         }
         int x = 46;

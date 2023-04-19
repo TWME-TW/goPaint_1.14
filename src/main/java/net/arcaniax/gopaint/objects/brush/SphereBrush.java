@@ -70,7 +70,7 @@ public class SphereBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Sphere Brush";
+        return "球體筆刷";
     }
 
     @SuppressWarnings("deprecation")

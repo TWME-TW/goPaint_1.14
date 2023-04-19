@@ -72,7 +72,7 @@ public class SprayBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Spray Brush";
+        return "噴刷";
     }
 
     @SuppressWarnings("deprecation")

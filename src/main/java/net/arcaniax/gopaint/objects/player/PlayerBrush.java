@@ -362,23 +362,23 @@ public class PlayerBrush {
     }
 
     public ItemStack export(ItemStack i) {
-        StringBuilder lore = new StringBuilder("___&8Size: " + brushSize);
+        StringBuilder lore = new StringBuilder("___&8尺寸: " + brushSize);
         if (brush instanceof SplatterBrush || brush instanceof SprayBrush) {
-            lore.append("___&8Chance: ").append(chance).append("%");
+            lore.append("___&8機率: ").append(chance).append("%");
         } else if (brush instanceof OverlayBrush) {
-            lore.append("___&8Thickness: ").append(thickness);
+            lore.append("___&8厚度: ").append(thickness);
         } else if (brush instanceof DiscBrush) {
-            lore.append("___&8Axis: ").append(axis);
+            lore.append("___&8軸: ").append(axis);
         } else if (brush instanceof AngleBrush) {
-            lore.append("___&8AngleDistance: ").append(this.angleDistance);
-            lore.append("___&8AngleHeightDifference: ").append(this.minAngleHeightDifference);
+            lore.append("___&8角距離: ").append(this.angleDistance);
+            lore.append("___&8角高差: ").append(this.minAngleHeightDifference);
         } else if (brush instanceof GradientBrush) {
-            lore.append("___&8Mixing: ").append(this.mixingStrength);
-            lore.append("___&8Falloff: ").append(this.falloffStrength);
+            lore.append("___&8混合度: ").append(this.mixingStrength);
+            lore.append("___&8衰減: ").append(this.falloffStrength);
         } else if (brush instanceof FractureBrush) {
-            lore.append("___&8FractureDistance: ").append(this.fractureDistance);
+            lore.append("___&8斷裂距離: ").append(this.fractureDistance);
         }
-        lore.append("___&8Blocks:");
+        lore.append("___&8方塊:");
         if (blocks.isEmpty()) {
             lore.append(" none");
         } else {
@@ -387,10 +387,10 @@ public class PlayerBrush {
             }
         }
         if (maskEnabled) {
-            lore.append("___&8Mask: ").append(mask.getMaterial().toString().toLowerCase()).append(":").append(mask.getData());
+            lore.append("___&8遮罩: ").append(mask.getMaterial().toString().toLowerCase()).append(":").append(mask.getData());
         }
         if (surfaceEnabled) {
-            lore.append("___&8Surface Mode");
+            lore.append("___&8表面模式");
         }
         ItemMeta im = i.getItemMeta();
         im.setDisplayName(" §b♦ " + brush.getName() + " §b♦ ");

@@ -47,34 +47,34 @@ public class ExportedPlayerBrush {
         b = GoPaintPlugin.getBrushManager().getBrush(name.replaceAll(" §b♦ ", ""));
         blocks = new ArrayList<>();
         for (String s : lore) {
-            if (s.startsWith("§8Size: ")) {
-                size = Integer.parseInt(s.replaceAll("§8Size: ", ""));
-            } else if (s.startsWith("§8Chance: ")) {
-                chance = Integer.parseInt(s.replaceAll("§8Chance: ", "").replaceAll("%", ""));
+            if (s.startsWith("§8尺寸: ")) {
+                size = Integer.parseInt(s.replaceAll("§8尺寸: ", ""));
+            } else if (s.startsWith("§8機率: ")) {
+                chance = Integer.parseInt(s.replaceAll("§8機率: ", "").replaceAll("%", ""));
             }
-            if (s.startsWith("§8Thickness: ")) {
-                thickness = Integer.parseInt(s.replaceAll("§8Thickness: ", ""));
+            if (s.startsWith("§8厚度: ")) {
+                thickness = Integer.parseInt(s.replaceAll("§8厚度: ", ""));
             }
-            if (s.startsWith("§8Axis: ")) {
-                axis = s.replaceAll("§8Axis: ", "");
+            if (s.startsWith("§8軸: ")) {
+                axis = s.replaceAll("§8軸: ", "");
             }
-            if (s.startsWith("§8FractureDistance: ")) {
-                fractureDistance = Integer.parseInt(s.replaceAll("§8FractureDistance: ", ""));
+            if (s.startsWith("§8斷裂距離: ")) {
+                fractureDistance = Integer.parseInt(s.replaceAll("§8斷裂距離: ", ""));
             }
-            if (s.startsWith("§8AngleDistance: ")) {
-                angleDistance = Integer.parseInt(s.replaceAll("§8AngleDistance: ", ""));
+            if (s.startsWith("§8角距離: ")) {
+                angleDistance = Integer.parseInt(s.replaceAll("§8角距離: ", ""));
             }
-            if (s.startsWith("§8AngleHeightDifference: ")) {
-                minAngleHeightDifference = Double.parseDouble(s.replaceAll("§8AngleHeightDifference: ", ""));
+            if (s.startsWith("§8角高差: ")) {
+                minAngleHeightDifference = Double.parseDouble(s.replaceAll("§8角高差: ", ""));
             }
-            if (s.startsWith("§8Mixing: ")) {
-                mixingStrength = Integer.parseInt(s.replaceAll("§8Mixing: ", ""));
+            if (s.startsWith("§8混合度: ")) {
+                mixingStrength = Integer.parseInt(s.replaceAll("§8混合度: ", ""));
             }
-            if (s.startsWith("§8Falloff: ")) {
-                falloffStrength = Integer.parseInt(s.replaceAll("§8Falloff: ", ""));
+            if (s.startsWith("§8衰減: ")) {
+                falloffStrength = Integer.parseInt(s.replaceAll("§8衰減: ", ""));
             }
-            if (s.startsWith("§8Blocks: ")) {
-                s = s.replaceAll("§8Blocks: ", "");
+            if (s.startsWith("§8方塊: ")) {
+                s = s.replaceAll("§8方塊: ", "");
                 if (!s.equals("none")) {
                     for (String s2 : s.split(" ")) {
                         String[] type = s2.split("\\:");
@@ -84,15 +84,15 @@ public class ExportedPlayerBrush {
                     }
                 }
             }
-            if (s.startsWith("§8Mask: ")) {
-                s = s.replaceAll("§8Mask: ", "");
+            if (s.startsWith("§8遮罩: ")) {
+                s = s.replaceAll("§8遮罩: ", "");
                 String[] type = s.split("\\:");
                 Material mat = Material.getMaterial(type[0].toUpperCase());
                 int data = Integer.parseInt(type[1]);
                 mask = new BlockType(mat, (short) data);
                 maskEnabled = true;
             }
-            if (s.startsWith("§8Surface Mode")) {
+            if (s.startsWith("§8表面模式")) {
                 surfaceEnabled = true;
             }
         }

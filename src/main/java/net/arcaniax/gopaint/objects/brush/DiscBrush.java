@@ -75,7 +75,7 @@ public class DiscBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Disc Brush";
+        return "圓盤刷";
     }
 
     @SuppressWarnings("deprecation")

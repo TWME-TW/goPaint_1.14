@@ -72,7 +72,7 @@ public class OverlayBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Overlay Brush";
+        return "覆蓋畫筆";
     }
 
     @SuppressWarnings("deprecation")

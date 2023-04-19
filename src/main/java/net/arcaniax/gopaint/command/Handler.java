@@ -104,7 +104,7 @@ public class Handler implements Listener, CommandExecutor {
                     try {
                         int sizeAmount = Integer.parseInt(args[1]);
                         pb.setBrushSize(sizeAmount);
-                        p.sendMessage(prefix + "§6Size set to: §e" + pb.getBrushSize());
+                        p.sendMessage(prefix + "§6大小設置為: §e" + pb.getBrushSize());
                         return true;
                     } catch (Exception e) {
                         p.sendMessage(prefix + "§c/gb size [數字]");

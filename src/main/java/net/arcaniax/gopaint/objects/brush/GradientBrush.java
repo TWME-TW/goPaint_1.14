@@ -86,7 +86,7 @@ public class GradientBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Gradient Brush";
+        return "漸變畫筆";
     }
 
     @SuppressWarnings("deprecation")

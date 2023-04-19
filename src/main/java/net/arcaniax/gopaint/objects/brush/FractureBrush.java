@@ -79,7 +79,7 @@ public class FractureBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Fracture Brush";
+        return "斷裂刷";
     }
 
     @SuppressWarnings("deprecation")

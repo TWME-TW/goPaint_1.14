@@ -327,16 +327,16 @@ public class BezierSpline {
     @Override
     public String toString() {
         if (knots == null) {
-            return "0 points.";
+            return "0 點。";
         }
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(knots.length);
-        stringBuilder.append(" points.");
+        stringBuilder.append(" 點。");
         return stringBuilder.toString();
     }
 
     public String toName() {
-        return "Curve";
+        return "曲線";
     }
 
     public BezierSpline emptySystem() {

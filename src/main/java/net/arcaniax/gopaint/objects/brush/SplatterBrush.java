@@ -77,7 +77,7 @@ public class SplatterBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Splatter Brush";
+        return "飛濺畫筆";
     }
 
     @SuppressWarnings("deprecation")

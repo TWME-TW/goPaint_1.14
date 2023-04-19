@@ -72,7 +72,7 @@ public class BucketBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Bucket Brush";
+        return "桶刷";
     }
 
     @SuppressWarnings("deprecation")
