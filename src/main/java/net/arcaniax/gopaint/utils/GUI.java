@@ -51,13 +51,13 @@ public class GUI {
     private static final String headBlend = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU5MTg0YWYxZGU3ZTViN2M0YWQ0MTFjNTZhZjRmOTMzNjY1MzYxNTkyOWJjOTVkNzEzYjdhNDJjZmYzZmJhZCJ9fX0=";
 
     public static Inventory Generate(PlayerBrush pb) {
-        Inventory inv = Bukkit.createInventory(null, 54, "§1goPaint Menu");
+        Inventory inv = Bukkit.createInventory(null, 54, "§1goPaint 選單");
         Update(inv, pb);
         return inv;
     }
 
     public static Inventory GenerateBrushes() {
-        Inventory inv = Bukkit.createInventory(null, 27, "§1goPaint Brushes");
+        Inventory inv = Bukkit.createInventory(null, 27, "§1goPaint 筆刷");
         Items item = new Items();
         // FILLER
         for (int x = 0; x < 27; x++) {
@@ -79,7 +79,7 @@ public class GUI {
                         item.createHead(headSphere,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Regular sphere brush"
+                                "___&7點擊選擇______" + "&8普通球形刷"
                         )
                 );
             } else if (b instanceof SprayBrush) {
@@ -88,7 +88,7 @@ public class GUI {
                         item.createHead(headSpray,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Configurable random chance brush"
+                                "___&7點擊選擇______" + "&8可配置的隨機機率刷子"
                         )
                 );
             } else if (b instanceof SplatterBrush) {
@@ -97,7 +97,7 @@ public class GUI {
                         item.createHead(headSplatter,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8More chance when closer___&8to the clicked point___&8and configurable chance"
+                                "___&7點擊選擇______" + "&8More chance when closer___&8to the clicked point___&8and configurable chance"
                         )
                 );
             } else if (b instanceof DiscBrush) {
@@ -367,7 +367,7 @@ public class GUI {
                     item.create(XMaterial.GOLD_NUGGET.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6放置機綠: &e" + pb.getChance() + "%",
+                            "&6放置機率: &e" + pb.getChance() + "%",
                             "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );

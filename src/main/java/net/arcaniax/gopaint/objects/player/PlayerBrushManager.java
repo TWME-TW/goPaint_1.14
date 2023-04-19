@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class PlayerBrushManager {
+public class  PlayerBrushManager {
 
     private final HashMap<String, PlayerBrush> playerBrushes;
     private final List<Brush> brushes;

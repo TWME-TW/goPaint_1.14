@@ -130,13 +130,13 @@ public class PaintBrush extends Brush {
             List<Location> locs = new ArrayList<>();
             locs.add(loc);
             selectedPoints.put(p.getName(), locs);
-            p.sendMessage(prefix + " Paint brush point #1 set.");
+            p.sendMessage(prefix + " 設置畫筆點 #1");
         } else {
             if (!p.isSneaking()) {
                 List<Location> locs = selectedPoints.get(p.getName());
                 locs.add(loc);
                 selectedPoints.put(p.getName(), locs);
-                p.sendMessage(prefix + " Paint brush point #" + locs.size() + " set.");
+                p.sendMessage(prefix + " 設置畫筆點 #" + locs.size());
                 return;
             }
             List<Location> locs = selectedPoints.get(p.getName());
@@ -206,7 +206,7 @@ public class PaintBrush extends Brush {
 
     @Override
     public String getName() {
-        return "Paint Brush";
+        return "油漆刷";
     }
 
 }
