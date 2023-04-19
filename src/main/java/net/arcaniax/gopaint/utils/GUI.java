@@ -97,7 +97,7 @@ public class GUI {
                         item.createHead(headSplatter,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7點擊選擇______" + "&8More chance when closer___&8to the clicked point___&8and configurable chance"
+                                "___&7點擊選擇______" + "&8更靠近點擊點時機率更大___&8且機率可以進行配置"
                         )
                 );
             } else if (b instanceof DiscBrush) {
@@ -106,7 +106,7 @@ public class GUI {
                         item.createHead(headDisc,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Paints blocks in the___&8same selected axis___&8from the block you clicked"
+                                "___&7點擊選擇______" + "&8從您點擊的方塊開始___&8以相同選定的軸向___&8將方塊塗上顏色"
                         )
                 );
             } else if (b instanceof BucketBrush) {
@@ -115,13 +115,13 @@ public class GUI {
                         item.createHead(headBucket,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Paints connected blocks___&8with the same block type"
+                                "___&7點擊選擇______" + "&8塗上相同類型的方塊___&8並將相連接的方塊一起塗上"
                         )
                 );
             } else if (b instanceof AngleBrush) {
                 inv.setItem(
                         x,
-                        item.createHead(headAngle, 1, "&6" + b.getName(), "___&7Click to select______" + "&8Only works on cliffs")
+                        item.createHead(headAngle, 1, "&6" + b.getName(), "___&7點擊選擇______" + "&8僅對懸崖有效")
                 );
             } else if (b instanceof OverlayBrush) {
                 inv.setItem(
@@ -129,7 +129,7 @@ public class GUI {
                         item.createHead(headOverlay,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Only paints blocks___&8that have air above it"
+                                "___&7點擊選擇______" + "&8僅塗上其上方有空氣的方塊"
                         )
                 );
             } else if (b instanceof FractureBrush) {
@@ -138,13 +138,13 @@ public class GUI {
                         item.createHead(headFracture,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Places blocks in cracks/fisures"
+                                "___&7點擊選擇______" + "&8在裂縫/縫隙中放置方塊"
                         )
                 );
             } else if (b instanceof GradientBrush) {
                 inv.setItem(
                         x,
-                        item.createHead(headGradient, 1, "&6" + b.getName(), "___&7Click to select______" + "&8Creates gradients")
+                        item.createHead(headGradient, 1, "&6" + b.getName(), "___&7點擊選擇______" + "&8創建漸變效果")
                 );
             } else if (b instanceof PaintBrush) {
                 inv.setItem(
@@ -152,7 +152,7 @@ public class GUI {
                         item.createHead(headPaint,
                                 1,
                                 "&6" + b.getName(),
-                                "___&7Click to select______" + "&8Paints strokes___&8hold shift to end"
+                                "___&7點擊選擇______" + "&8畫筆塗色___&8按住 Shift 鍵停止"
                         )
                 );
             }
@@ -194,8 +194,8 @@ public class GUI {
                     item.create(Material.FEATHER,
                             (short) 0,
                             1,
-                            "&6goPaint Brush",
-                            "&a&lEnabled______&7Left click with item to export___&7Right click to toggle"
+                            "&6goPaint 筆刷",
+                            "&a&l已啟用______&7使用物品左鍵點擊以進行導出___&7右鍵點擊以切換"
                     )
             );
             inv.setItem(
@@ -222,8 +222,8 @@ public class GUI {
                     item.create(Material.FEATHER,
                             (short) 0,
                             1,
-                            "&6goPaint Brush",
-                            "&c&lDisabled______&7Left click with item to export___&7Right click to toggle"
+                            "&6goPaint 筆刷",
+                            "&c&l已停用______&7使用物品左鍵點擊以進行導出___&7右鍵點擊以切換"
                     )
             );
             inv.setItem(
@@ -249,13 +249,13 @@ public class GUI {
         );
 
 
-        String clicks = "___&7Shift click to select___&7Click to cycle brush______";
+        String clicks = "___&7Shift 點擊選擇___&7點擊以循環切換筆刷______";
         if (b instanceof SphereBrush) {
             inv.setItem(
                     11,
                     item.createHead(headSphere,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -264,7 +264,7 @@ public class GUI {
                     11,
                     item.createHead(headSpray,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -273,7 +273,7 @@ public class GUI {
                     11,
                     item.createHead(headSplatter,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -282,7 +282,7 @@ public class GUI {
                     11,
                     item.createHead(headDisc,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -291,7 +291,7 @@ public class GUI {
                     11,
                     item.createHead(headBucket,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -300,7 +300,7 @@ public class GUI {
                     11,
                     item.createHead(headAngle,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -309,7 +309,7 @@ public class GUI {
                     11,
                     item.createHead(headOverlay,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -318,7 +318,7 @@ public class GUI {
                     11,
                     item.createHead(headFracture,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -327,7 +327,7 @@ public class GUI {
                     11,
                     item.createHead(headGradient,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
@@ -336,7 +336,7 @@ public class GUI {
                     11,
                     item.createHead(headPaint,
                             1,
-                            "&6Selected Brush type",
+                            "&6所選筆刷類型",
                             clicks + GoPaintPlugin.getBrushManager().getBrushLore(b.getName())
                     )
             );
