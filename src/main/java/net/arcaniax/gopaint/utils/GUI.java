@@ -367,8 +367,8 @@ public class GUI {
                     item.create(XMaterial.GOLD_NUGGET.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Place chance: &e" + pb.getChance() + "%",
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6放置機綠: &e" + pb.getChance() + "%",
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -398,8 +398,8 @@ public class GUI {
                     item.create(XMaterial.COMPASS.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Axis: &e" + pb.getAxis(),
-                            "___&7Click to change"
+                            "&6軸: &e" + pb.getAxis(),
+                            "___&7點擊以更改"
                     )
             );
             inv.setItem(
@@ -430,8 +430,8 @@ public class GUI {
                     item.create(XMaterial.BOOK.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Layer Thickness: &e" + pb.getThickness(),
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6圖層厚度: &e" + pb.getThickness(),
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -461,8 +461,8 @@ public class GUI {
                     item.create(XMaterial.DAYLIGHT_DETECTOR.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Angle Check Distance: &e" + pb.getAngleDistance(),
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6角度檢查距離: &e" + pb.getAngleDistance(),
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -489,8 +489,8 @@ public class GUI {
                     item.create(XMaterial.BLAZE_ROD.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Maximum Angle: &e" + pb.getMinHeightDifference() + "°",
-                            "___&7Left click to increase___&7Right click to decrease___&7Shift click to change by 15"
+                            "&6最大角度: &e" + pb.getMinHeightDifference() + "°",
+                            "___&7左鍵點擊增加___&7右鍵點擊減少___&7鍵點擊增加/減少 15"
                     )
             );
             inv.setItem(
@@ -520,8 +520,8 @@ public class GUI {
                     item.create(XMaterial.DAYLIGHT_DETECTOR.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Fracture Check Distance: &e" + pb.getFractureDistance(),
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6斷裂檢查距離: &e" + pb.getFractureDistance(),
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -551,8 +551,8 @@ public class GUI {
                     item.create(XMaterial.MAGMA_CREAM.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Mixing Strength: &e" + pb.getMixingStrength() + "%",
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6混合強度: &e" + pb.getMixingStrength() + "%",
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -581,8 +581,8 @@ public class GUI {
                     item.create(XMaterial.BLAZE_POWDER.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Falloff Strength: &e" + pb.getFalloffStrength() + "%",
-                            "___&7Left click to increase___&7Right click to decrease"
+                            "&6衰減強度: &e" + pb.getFalloffStrength() + "%",
+                            "___&7左鍵點擊以增加___&7右鍵點擊以減少"
                     )
             );
             inv.setItem(
@@ -612,8 +612,8 @@ public class GUI {
                 item.create(XMaterial.BROWN_MUSHROOM.parseMaterial(),
                         (short) 0,
                         1,
-                        "&6Brush Size: &e" + pb.getBrushSize(),
-                        "___&7Left click to increase___&7Right click to decrease___&7Shift click to change by 10"
+                        "&6刷子大小: &e" + pb.getBrushSize(),
+                        "___&7左鍵點擊增加___&7右鍵點擊減少___&7Shift 點擊以更改 10"
                 )
         );
         inv.setItem(
@@ -642,8 +642,8 @@ public class GUI {
                     item.create(XMaterial.JACK_O_LANTERN.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Mask",
-                            "&a&lEnabled______&7Click to toggle"
+                            "&6遮罩",
+                            "&a&l啟用______&7點擊切換"
                     )
             );
             inv.setItem(
@@ -667,7 +667,7 @@ public class GUI {
             );
             inv.setItem(
                     15,
-                    item.create(XMaterial.PUMPKIN.parseMaterial(), (short) 0, 1, "&6Mask", "&c&lDisabled______&7Click to toggle")
+                    item.create(XMaterial.PUMPKIN.parseMaterial(), (short) 0, 1, "&6遮罩", "&c&l已禁用______&7點擊切換")
             );
             inv.setItem(
                     24,
@@ -696,8 +696,8 @@ public class GUI {
                     item.create(XMaterial.LIGHT_WEIGHTED_PRESSURE_PLATE.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Surface Mode",
-                            "&a&lEnabled______&7Click to toggle"
+                            "&6平面模式",
+                            "&a&l啟用______&7點擊切換"
                     )
             );
             inv.setItem(
@@ -724,8 +724,8 @@ public class GUI {
                     item.create(XMaterial.LIGHT_WEIGHTED_PRESSURE_PLATE.parseMaterial(),
                             (short) 0,
                             1,
-                            "&6Surface Mode",
-                            "&c&lDisabled______&7Click to toggle"
+                            "&6平面模式e",
+                            "&c&l已禁用______&7點擊切換"
                     )
             );
             inv.setItem(
@@ -769,8 +769,8 @@ public class GUI {
                         item.create(mat,
                                 data,
                                 1,
-                                "&aSlot " + (x - 45) + " &7" + (int) Math.floor(100 / size) + "%",
-                                "___&7Left click with a block to change___&7Right click to clear"
+                                "&a槽 " + (x - 45) + " &7" + (int) Math.floor(100 / size) + "%",
+                                "___&7左鍵點擊方塊進行更改___&7右鍵清除"
                         )
                 );
             } else {
@@ -779,8 +779,8 @@ public class GUI {
                         item.create(mat,
                                 data,
                                 (int) Math.floor(100 / size),
-                                "&aSlot " + (x - 45) + " &7" + (int) Math.floor(100 / size) + "%",
-                                "___&7Left click with a block to change___&7Right click to clear"
+                                "&a槽 " + (x - 45) + " &7" + (int) Math.floor(100 / size) + "%",
+                                "___&7左鍵點擊方塊進行更改___&7右鍵清除"
                         )
                 );
             }
@@ -800,7 +800,7 @@ public class GUI {
         BlockType bt = pb.getMask();
         inv.setItem(
                 52,
-                item.create(bt.getMaterial(), bt.getData(), 1, "&6Current Mask", "___&7Left click with a block to change")
+                item.create(bt.getMaterial(), bt.getData(), 1, "&6目前遮罩", "___&7左鍵點擊方塊進行更改")
         );
     }
 

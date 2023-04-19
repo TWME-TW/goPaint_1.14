@@ -47,7 +47,7 @@ public class Handler implements Listener, CommandExecutor {
             PlayerBrush pb = GoPaintPlugin.getBrushManager().getPlayerBrush(p);
             String prefix = GoPaintPlugin.getSettings().getPrefix();
             if (!p.hasPermission("gopaint.use")) {
-                p.sendMessage(prefix + "§cYou are lacking the permission gopaint.use");
+                p.sendMessage(prefix + "§c您缺乏 gopaint.use 的權限。");
                 return true;
             }
             if (args.length == 0) {
@@ -59,21 +59,21 @@ public class Handler implements Listener, CommandExecutor {
                 return true;
             } else if (args.length == 1) {
                 if (args[0].equalsIgnoreCase("size")) {
-                    p.sendMessage(prefix + "§c/gp size [number]");
+                    p.sendMessage(prefix + "§c/gp size [數字]");
                     return true;
                 } else if (args[0].equalsIgnoreCase("toggle")) {
                     if (pb.isEnabled()) {
                         pb.toggleEnabled();
-                        p.sendMessage(prefix + "§cDisabled brush");
+                        p.sendMessage(prefix + "§c筆刷已被禁用。");
                     } else {
                         pb.toggleEnabled();
-                        p.sendMessage(prefix + "§aEnabled brush");
+                        p.sendMessage(prefix + "§a筆刷已啟用。");
                     }
                     return true;
                 } else if ((args[0].equalsIgnoreCase("reload") || args[0].equalsIgnoreCase("r")) && p.hasPermission(
                         "gopaint.admin")) {
                     GoPaintPlugin.reload();
-                    p.sendMessage(prefix + "§aReloaded");
+                    p.sendMessage(prefix + "§a已重新載入。");
                     return true;
                 } else if (args[0].equalsIgnoreCase("info") || args[0].equalsIgnoreCase("i")) {
 
@@ -107,12 +107,13 @@ public class Handler implements Listener, CommandExecutor {
                         p.sendMessage(prefix + "§6Size set to: §e" + pb.getBrushSize());
                         return true;
                     } catch (Exception e) {
-                        p.sendMessage(prefix + "§c/gb size [number]");
+                        p.sendMessage(prefix + "§c/gb size [數字]");
                         return true;
                     }
                 }
                 if (p.hasPermission("gopaint.admin")) {
                     p.sendMessage(prefix + "§c/gp size§7|§ctoggle§7|§cinfo§7|§creload");
+
                     return true;
                 }
                 p.sendMessage(prefix + "§c/gp size§7|§ctoggle§7|§cinfo");

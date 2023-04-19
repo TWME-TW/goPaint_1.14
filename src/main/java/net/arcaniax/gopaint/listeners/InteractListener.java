@@ -101,7 +101,7 @@ public class InteractListener implements Listener {
             } else {
                 p.sendMessage(GoPaintPlugin
                         .getSettings()
-                        .getPrefix() + "§cYour brush is disabled, left click to enable the brush.");
+                        .getPrefix() + "§c您的筆刷已被禁用，左鍵點擊以啟用筆刷。");
             }
         }
         if (e.getPlayer().getItemInHand().getType() == XMaterial.FEATHER.parseMaterial() && (e
