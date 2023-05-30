@@ -7,9 +7,9 @@ plugins {
     java
     `java-library`
 
-    id("com.diffplug.spotless") version "6.17.0"
-    id("com.github.johnrengelman.shadow") version "8.1.0"
-    id("org.ajoberstar.grgit") version "5.0.0"
+    id("com.diffplug.spotless") version "6.18.0"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("org.ajoberstar.grgit") version "5.2.0"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.3"
 
     idea
@@ -49,13 +49,13 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("com.intellectualsites.bom:bom-newest:1.25"))
+    implementation(platform("com.intellectualsites.bom:bom-newest:1.27"))
     compileOnlyApi("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
     compileOnly("com.mojang:authlib:1.5.25")
     compileOnlyApi("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit")
     implementation("dev.notmyfault.serverlib:ServerLib")
-    implementation("org.bstats:bstats-bukkit:3.0.1")
-    implementation("org.bstats:bstats-base:3.0.1")
+    implementation("org.bstats:bstats-bukkit:3.0.2")
+    implementation("org.bstats:bstats-base:3.0.2")
     implementation("io.papermc:paperlib")
 }
 
